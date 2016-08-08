@@ -1,0 +1,15 @@
+<h1>Welcome to numbers & letters game</h1>
+<div class="container">
+    <form action="score">
+      <div class="row">
+        <div class="form-group">
+          <label for="word">Here the grid of letter <strong>"<%= @grid_generate.join(" ") %>"<strong> puts your best shot
+          </label>
+          <input type="text" name="query" id="word" class="form-control" placeholder="Give me a word bitch!">
+          <input type="text" name="grid" value="<%= @grid_generate.join %>" class="form-control">
+          <button type="submit" class="btn btn-primary">Get my score</button>
+        </div>
+      </div>
+    </form>
+</div>
+
